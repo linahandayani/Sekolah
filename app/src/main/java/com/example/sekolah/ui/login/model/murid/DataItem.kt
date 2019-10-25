@@ -2,6 +2,7 @@ package com.example.sekolah.ui.login.model.murid
 
 import javax.annotation.Generated
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 @Generated("com.robohorse.robopojogenerator")
 data class DataItem(
@@ -20,4 +21,5 @@ data class DataItem(
 
 	@field:SerializedName("almt")
 	val almt: String? = null
-)
+):Serializable
+//serializable agar bisa dataitem bisa dikirim pakai intens

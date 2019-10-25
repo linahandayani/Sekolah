@@ -10,8 +10,8 @@ object NetworkModule {
     //sesuaikan akses domain, ga boleh localhost (harus domain atau ip)
     //contoh dg domain: http://illegal-trade.server4111.com/index.php
 
-    const val BASE_URL = "http://192.168.3.12/cisekolah/index.php/Sekolah/"
-
+    const val BASE_URL = "http://192.168.3.37/cisekolah/index.php/Sekolah/"
+//BODY, error html terlihat di logcat. 
     fun getOkHttp(): OkHttpClient {
         val logging = HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BASIC)
             .setLevel(HttpLoggingInterceptor.Level.BODY)
