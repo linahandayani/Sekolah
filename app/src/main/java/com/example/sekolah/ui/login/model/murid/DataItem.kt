@@ -22,4 +22,4 @@ data class DataItem(
 	@field:SerializedName("almt")
 	val almt: String? = null
 ):Serializable
-//serializable agar bisa dataitem bisa dikirim pakai intens
+//serializable agar dataitem bisa dikirim pakai intens

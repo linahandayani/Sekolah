@@ -32,19 +32,16 @@ import org.json.JSONException
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import kotlinx.android.synthetic.main.app_bar_main.*
+
 
 class Murid : AppCompatActivity() {
     lateinit var recyclerView: RecyclerView
-    lateinit var fm: FragmentManager
-    lateinit var ft: FragmentTransaction
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_murid)
 
-        fm = supportFragmentManager
-        ft = fm.beginTransaction()
 
         NetworkModule.getService().tampilMurid()
             .enqueue(object : Callback<ResponseMurid> {
