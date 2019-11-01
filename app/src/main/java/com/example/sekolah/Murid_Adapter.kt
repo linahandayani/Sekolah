@@ -65,6 +65,7 @@ class Murid_Adapter(
         ) {
             itemView.setOnClickListener {
                 onItemClickListener.onClick(list, position)
+
             }
 
         }
@@ -73,6 +74,7 @@ class Murid_Adapter(
 
     }
 //2.
+//    setiap tombol
     interface OnMuridClickListener {
         fun onClick(list: DataItem, position: Int)
     }

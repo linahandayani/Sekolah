@@ -62,15 +62,12 @@ class Murid : AppCompatActivity() {
 //                      ambil data
 //                        samakan data, hilangkan tanda tanya di
 //                        kalau di adapter, harus di set adapternya, tentunya layoutnya
-                        var adapter = Murid_Adapter(
-                            this@Murid,
-                            data!!,
-                            object : Murid_Adapter.OnMuridClickListener {
+                        var adapter = Murid_Adapter(this@Murid, data!!, object : Murid_Adapter.OnMuridClickListener {
                                 override fun onClick(list: DataItem, position: Int) {
                                     alert {
                                         positiveButton("Edit") {
-                                           val intent = Intent(this@Murid, EditMurid::class.java)
-                                            intent.putExtra("murid",list)
+                                            val intent = Intent(this@Murid, EditMurid::class.java)
+                                            intent.putExtra("murid", list)
                                             startActivity(intent)
                                         }
                                         negativeButton("Hapus") {
